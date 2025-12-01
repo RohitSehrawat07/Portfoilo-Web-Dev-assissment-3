@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <header class="header">
+    <nav class="nav container">
+      <h2 class="logo">Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section id="home" class="hero container">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Rohit Sehrawat</span></h1>
+      <p>A Frontend Developer & UI Designer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img"></div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section id="about" class="about container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a passionate web developer specializing in modern, responsive,
+      and interactive web experiences. I love building clean UI and minimal
+      digital products.
+    </p>
+  </section>
+
+  <!-- ======== PROJECTS SECTION ======== -->
+  <section id="projects" class="projects container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Modern responsive UI built with HTML, CSS & JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Portfolio system with dark/light mode & animations.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Full-stack web app with advanced dashboard UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section id="contact" class="contact container">
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </section>
+
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  toggle.onclick = () => document.body.classList.toggle("dark");
+</script>
+
+</body>
+</html>
